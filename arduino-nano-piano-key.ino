@@ -32,7 +32,7 @@ constexpr int MELODY_LENGTH = 4;
 const int melody[MELODY_LENGTH] = {0, 3, 1, 2};
 
 // Объект для отслеживания мелодии.
-using MelodyTracker = SequenceTracker<int>;
+using MelodyTracker = SequenceTracker<int, MELODY_LENGTH>;
 MelodyTracker melody_tracker;
 
 /** Конфигурирует выводы устройства и настраивает
